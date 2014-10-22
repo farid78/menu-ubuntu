@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<!-- <link href="normalize.css"  rel="stylesheet" media="all" type="text/css"> -->
+	<link href="styles.css" rel="stylesheet" media="all" type="text/css"> 
+	<title>Formulaire de réservation</title>
+	
+	<!--
+
+	<style>
+	p.serif {
+	    font-family: "Times New Roman", Times, serif;
+	}
+
+	p.sansserif {
+	    font-family: Arial, Helvetica, sans-serif;
+	}
+	</style>
+
+	-->
+
+</head>
+
+<header>
+
+
+</header>
+
+<body>
+<h1>Formulaire de réservation</h1>
+	<div class="page">		
+	<form name="formulaire" method="post">
+		
+
+
+		<fieldset>
+			<legend>Mes coordonnées</legend>			
+
+			<p>
+				<label for="nom-id">Nom</label>
+				<input type="text" name ="Nom" id="nom-id">
+			</p>
+
+			<p>
+				<label for="prenom-id">Prénom</label>
+				<input type="text" name ="Prénom" id="prenom-id">
+			</p>
+
+			<p>
+				<label for="email-id">Email</label>
+				<input type="email" name ="Email" id="email-id">
+			</p>
+
+			<p>
+				<label for="adresse">Adresse</label>
+				<textarea name="adresse" rows="3" cols="30" id="adresse" value="Adresse">Adresse</textarea>
+			<P>
+
+			<p>
+				<label for="postal"></label>
+				<input type="nombre" name ="postal" id="postal" value="code postal" size="10">
+				<input type="text" name ="ville" id="ville" value="ville">
+			<P>
+
+
+		</fieldset>
+
+		<fieldset>
+			<legend>Mon voyage</legend>
+					
+				<p>
+
+					<label for="depart">Départ</label>
+					<select id="depart" type="date" onchange="depart(value)">
+							<option value="1">...</option>
+							<option value="2">Paris Charles de Gaulle</option>
+						    <option value="3">Lyon</option>
+						    <option value="4">Marseille</option>
+						    <option value="5">Bordeaux</option>
+						    <option value="6">Lille</option>
+						    <option value="7">dijon</option>
+					</select>
+				</p>
+
+				<p>
+
+					<label for="arriver">Arrivée</label>
+					<select name="arriver" onchange="arriver(value)">
+							<option value="1">...</option>
+							<option value="2">New york</option>
+						    <option value="3">Boston</option>
+						    <option value="4">San diego</option>
+						    <option value="5">Washington</option>
+						    <option value="6">Detroit</option>
+						    <option value="7">Chicago</option>
+					</select>
+				</p>
+		</fieldset>	
+
+				
+		<fieldset>
+
+				<legend>Mon hébergement</legend>
+					<label for="classe">Classe</label>
+					
+
+						<input type="checkbox" name="choix1" value="1">*
+						<input type="checkbox" name="choix2" value="2">**
+						<input type="checkbox" name="choix3" value="3">***
+						<input type="checkbox" name="choix4" value="4">****
+						<input type="checkbox" name="choix5" value="5">*****	
+					
+					<p>
+					<label for="classe">Options</label>
+					
+						<input type="checkbox" name="choix1" value="1">Animaux
+						<input type="checkbox" name="choix2" value="2">Piscine
+						<input type="checkbox" name="choix3" value="3">Télévision
+					</p>		
+
+				
+				
+		</fieldset>
+
+	
+		</form>
+
+	</div>
+
+
+</body>
+</html>
